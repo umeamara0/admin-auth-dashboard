@@ -13,4 +13,4 @@ dmin Dashboard with Auth & Validation
 - **JavaScript (ES6)**: DOM manipulation for validation logic and navigation.
 
  Live Demo
-[Explore the Live Project]
+[Explore the Live Project](https://umeamara0.github.io/admin-auth-dashboard/)
