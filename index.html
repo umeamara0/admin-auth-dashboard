@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Javascript/index.js"></script>
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <Link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/index.css"/>
+    
+</head>
+<body>
+    <div id="Container">
+        <div id="Sidenav">
+             <div id="sidenav-menu">
+               <button id="reg-id"  onclick="tab('reg-id','sign-id','register','signin')">Register</button>
+               <button  id="sign-id"    onclick="tab('sign-id','reg-id','signin','register')">Signin</button>
+             </div>
+        </div>
+         <div id="section">
+          <nav id="topnav">
+            <div id="content">
+                    <button id="toggle" onclick="toggle()">
+                     <i class="fa fa-bars"></i>
+                     </button>
+                     <h1 id="heading">Coding ott</h1>
+            </div>
+    
+        
+          </nav>
+          <div id="section-content" >
+            <div id="register">
+                <h1 id="label">Register</h1>
+                <div id="card" class="animate__animated animate__slideInLeft animate__faster">
+                    <form onsubmit="signup(event)" name="signUpForm">
+                    <input type="text" placeholder=" Fullname " name="fullname" oninput="onInputValidation(this,'name-lbl')" />
+                    <p id="name-lbl"></p>
+                    <input type="email" placeholder=" example@gmail.com" name="email" oninput="onInputValidation(this,'email-lbl')"/>
+                    <p id="email-lbl"></p>
+                    <div id="pass-container">
+                      <input type="password" placeholder=" ******" name="password" id="signup-password" oninput="onInputValidation(this,'password-lbl')"/>
+                      <p id="password-lbl"></p>
+                    <button type="button"  onclick="btnfunc('signup-password','btn-icon')">
+                      <i class="fa fa-eye" id="btn-icon"></i>
+                    </button>
+                    </div>
+                    
+                    <button type="submit">Register</button>
+                </form>
+                </div>
+                
+            </div>
+             <div id="signin">
+                <h1 id="label">Signin</h1>
+                     
+                   <div id="card">
+                    <form  name="loginForm" onsubmit="login(event)">
+                    
+                    <input type="email" placeholder=" example@gmail.com" name="email" oninput="onInputValidation(this,'login-email-lbl')" />
+                    <p id="login-email-lbl"></p>
+                    <div id="pass-container">
+                      <input type="password" placeholder=" ******" name="password" id="login-password" oninput="onInputValidation(this,'login-password-lbl')" />
+                     
+                    <button type="button"  onclick="btnfunc('login-password','bt-icon')">
+                     <i class="fa fa-eye" id="bt-icon"></i>
+  </button>
+</div>
+ <p id="login-password-lbl"></p>
+                    
+                    <button type="submit">Login</button>
+                </form>
+                     
+            
+              
+                </div>
+            </div>
+
+          </div>
+         </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
